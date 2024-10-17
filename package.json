@@ -1,0 +1,14 @@
+{
+  "name": "rate-limit",
+  "version": "1.0.0",
+  "description": "A small Node.js utility to enforce rate limiting for function calls. This is particularly useful when working with APIs that impose rate limits, but the library is flexible enough to be used in other similar scenarios.",
+  "main": "rate-limit.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
