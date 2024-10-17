@@ -14,12 +14,7 @@ The library exports a single function, `createRateLimit`, which generates a rate
 
 ## Usage
 
-1. Clone the repository.
-
-    ```bash
-    git clone <repository-url>
-    cd <repository-name>
-    ```
+1. Just copy rate-limit.js
 
 2. Use the library in your project.
 
