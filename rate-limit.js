@@ -41,12 +41,8 @@ module.exports = function createRateLimit(limit = 15, perMiliseconds = 60000) {
 
         // Check if we're within the rate limit (15 requests per minute)
         if (requestCount >= limit) {
-            // Calculate the remaining time until the next minute reset
-            const timeLeft = perMiliseconds - (currentTime - lastResetTime);
-            console.log(`Rate limit exceeded. Waiting for ${Math.ceil(timeLeft / 1000)} seconds.`);
-
-            // Wait for the remaining time
-            await wait(timeLeft);
+            console.log(`Rate limit exceeded. Waiting for ${Math.ceil(perMiliseconds / 1000)} seconds.`);
+            await wait(perMiliseconds);
 
             // After waiting, reset the request count and continue
             requestCount = 0;
